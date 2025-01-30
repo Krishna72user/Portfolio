@@ -22,7 +22,7 @@ Frontend:
 
  - HTML, CSS, JavaScript
 
- - Tailwind CSS / Bootstrap (if used)
+ - Tailwind CSS 
 
 Deployment:
 
