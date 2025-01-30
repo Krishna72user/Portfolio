@@ -24,15 +24,9 @@ Frontend:
 
  - Tailwind CSS / Bootstrap (if used)
 
-Backend:
-
- - Express.js (if applicable)
-
- - Python / Flask (if applicable)
-
 Deployment:
 
- - GitHub Pages / Render / Netlify
+ -  Netlify
 
 📂 Installation & Setup
 
