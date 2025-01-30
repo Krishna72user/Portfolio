@@ -136,11 +136,12 @@ window.addEventListener("scroll",()=>{
 // })
 
 const scriptURL="https://script.google.com/macros/s/AKfycbwZPuOoR_hYQJX6fDGFBhh-7eF1jz0A3EcMh14cuuAp5OAO-PfytpFTMYFFHjTHjYM/exec"
+const sub = document.querySelector(".formbut")
   const form = document.forms['form']
   form.addEventListener('submit', e => {
     e.preventDefault();
     const newf = document.createElement("div")
-    newf.className="New";
+    newf.className="newf";
     newf.innerText="Sending..."
     document.querySelector(".formbut").replaceWith(newf);
     fetch(scriptURL, { method: 'POST',
@@ -148,10 +149,10 @@ const scriptURL="https://script.google.com/macros/s/AKfycbwZPuOoR_hYQJX6fDGFBhh-
     .then(response => 
         {
         alert("Thank you! Form is submitted" )
-        console.log(response)
         })
     .then(() => { 
         home.click();
+        newf.replaceWith(sub);
         form.reset();
     })
     .catch(error => 
