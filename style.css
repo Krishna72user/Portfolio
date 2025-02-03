@@ -195,19 +195,25 @@ a{
   text-decoration: none;
   font-weight: 500;
 }
-#hom{
+.h1{
   display: flex;
   flex-wrap: wrap;
-  margin-left: 5em;
-  align-items: center;
-  height: 90vh;
   overflow: hidden;
 }
+
 .hamlst{
   display: none;
   position: fixed;
   right: -22vw;
   opacity: 0;
+}
+#hom{
+  margin-top: 9em;
+  margin-left: 5em;
+  display: flex;
+  flex-direction: row;
+  gap: 19em;
+  justify-content: space-between;
 }
 @media only screen and (max-width:800px){
   nav>ul>a{
@@ -216,6 +222,11 @@ a{
   .ham{
     display: block;
     margin-right: 3em;
+  }
+  #hom{
+    flex-direction: column;
+    gap: 7em;
+    margin-top: 6.5em;
   }
 }
 .hamlst{
@@ -252,10 +263,9 @@ nav>ul>div>svg{
   width: 4em;
 }
 
-.img{
-  width: 100px;
-  height: 100px;
-  background-color: rgb(15, 48, 48);
+div>img{
+  height: 20em;
+  margin-right: 10em;
 }
 #hom>:nth-child(1){
   display: flex;
@@ -291,21 +301,23 @@ nav>ul>div>svg{
   .hire{
     width: 5.5em;
   }
+  #hom{
+    margin-left: 3em;
+  }
+  div>img{
+    height: 15em;
+  }
   .downl{
     margin-left: 1em;
     width: auto;
-  }
-  #hom{
-    margin-top: 4em;
-    margin-left: 2em;
   }
   nav>div{
     left: 1.4em;
   }
 }
 .name{
-    color: rgb(14, 110, 213);
-    text-decoration: underline;
+  color: rgb(14, 110, 213);
+  text-decoration: underline;
 }
 @keyframes line{
     0%{
